@@ -1,0 +1,15 @@
+if(!exists('meta') || is.null(meta)) meta <- packageDescription('RMX')
+year <- sub('-.*', '', meta$Date)
+note <- sprintf('R package version %s', meta$Version)
+citation(auto = meta)
+
+bibentry(bibtype = 'Article',
+         title   = '{RMX/PIccc}: An Extended Person-Item Map and a Unified IRT Output for eRm, psychotools, ltm, mirt, and TAM',
+         author  = 'Milica Kabic and Rainer W. Alexandrowicz',
+         journal = 'psych',
+         year    = '2023',
+         volume  = '5',
+         issue   = '3',
+         pages   = '948-965',
+         doi     = '10.3390/psych5030062',
+)
